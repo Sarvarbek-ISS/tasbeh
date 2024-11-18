@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+  font-family: 'Orbitron';
+  background-color: black;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+  color: green;
+  text-shadow: green 1px 0 9px;
+}
+
+.main {
+  text-align: center;
+}
+
+#tnum {
+  display: inline-block;
+  border: 5px solid #7cf246;
+  padding: 110px 126px 110px 126px;
+  border-radius: 22px 80px;
+  font-size: 60px;
+  color: green;
+  text-shadow: green 1px 0 9px;
+  box-shadow: 12px 12px 12px 12px green;
+}
+
+.btnwrap {
+  margin-top: 90px;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+}
+
+.animatsiya {
+  text-shadow: green 1px 0 9px;
+  color: green;
+}
+
+.button__78 {
+  font-size: 42px;
+  color: green;
+  outline: none;
+  border-radius: 12px;
+  padding: 12px;
+  background: #000;
+  border-color: green;
+  box-shadow: 1px 2px 66px 2px green;
+}
+
+li::marker {
+  color: #c4c4c4;
+}
+
+.link {
+  color: #c4c4c4;
+  text-decoration: none;
+  cursor: default;
+}
+
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .5s;
+}
+
+.first__class {
+  display: flex;
+}
+
+.second__class {
+  margin-top: 150px;
+}
+
+@media (max-width: 500px) {
+  .first__class {
+    display: none;
+  }
+}
+
+.clock {
+  font-size: 48px;
+  font-weight: bold;
+  color: green;
+  text-shadow: green 1px 0 9px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #313131;
+}
+
+input:focus+.slider {
+  box-shadow: 1px 2px 66px 2px green;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  box-shadow: 1px 2px 66px 2px rgb(71, 80, 71);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
